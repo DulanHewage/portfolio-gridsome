@@ -1,5 +1,5 @@
 {
-  "name": "netlifycms-gridsome",
+  "name": "my-personal-site-gridsome",
   "private": true,
   "scripts": {
     "build": "gridsome build",

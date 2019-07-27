@@ -13,7 +13,7 @@ body {
  	--link-color: #6b17e6;
  	--border-color:  rgba(0,0,0,.1);;
   --space: 3.5rem;
-  --content-width: 860px;
+  --content-width: 38rem;
   --header-height: 80px;
   --radius: 5px;
 }
@@ -32,10 +32,10 @@ body {
 
 // Override variables for Dark theme
 body[data-theme="dark"] {
- 	--bg-color: #0D2538;
- 	--bg-content-color: #0f2d44;
+ 	--bg-color: #282c35;
+ 	--bg-content-color: #1e2635;
  	--bg-code: rgba(0,0,0,.3);
- 	--border-color:  rgba(255,255,255,.1);;
+ 	--border-color:  rgba(104, 104, 104, 0.1);;
  	--body-color: #ced8de;
  	--title-color: #fff;
  	--link-color: #af9cef;
