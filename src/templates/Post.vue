@@ -79,7 +79,10 @@ query Post ($path: String!) {
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
-}
+  &__text {
+    overflow-wrap: break-word;
+  }
+} 
 
 .post {
 
