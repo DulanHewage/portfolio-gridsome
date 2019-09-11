@@ -2,11 +2,12 @@
 	<div class="author">
 
 		<h1 v-if="showTitle" class="author__site-title">
-			{{ $static.metaData.siteName }}
+			A personal blog by Dulan Hewage
+			<!-- {{ $static.metaData.siteName }} -->
 		</h1>
 
 		<p class="author__intro">
-			Web Developer | JavaScript Nerd | Some-badass-shit
+			Web Developer | JavaScript Rookie | Music Allday!
 		</p>
 
 		<p class="author__links">

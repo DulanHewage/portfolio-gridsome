@@ -25,7 +25,6 @@
       <div class="post-comments">
         <!-- Add comment widgets here -->
       </div>
-
       <Author class="post-author" />
     </article>
   </Layout>
@@ -49,9 +48,26 @@ export default {
         {
           name: 'description',
           content: this.$page.post.description
+        },
+        {
+          name: 'keywords',
+          content: this.getMetaKeywords
         }
       ]
     }
+  },
+  computed: {
+    getMetaKeywords() {
+      let newArr = []
+      this.$page.post.tags.forEach(t => {
+        newArr.push(t.title)
+      })
+
+      return newArr.join(',')
+    }
+  },
+  mounted() {
+
   }
 }
 </script>

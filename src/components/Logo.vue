@@ -1,7 +1,7 @@
 <template>
 	<g-link class="logo" to="/">
 	  <span class="logo__text">
-	    &larr; {{ $static.metaData.siteName }}
+	    <span v-show="showBackArrow"> &larr; </span> <span>StayCode</span>
 	  </span>
 	</g-link>
 </template>
@@ -13,6 +13,15 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+	props: {
+		showBackArrow: { default: true }
+	}
+}
+</script>
+
 
 <style lang="scss">
 .logo {

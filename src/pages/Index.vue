@@ -2,10 +2,9 @@
   <Layout :show-logo="false">
     <!-- Author intro -->
     <Author :show-title="true" />
-
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="post in filteredPosts" :key="post.node.id" :post="post.node"/>
     </div>
 
   </Layout>
@@ -33,6 +32,7 @@
             title
             path
         }
+        published
       }
     }
   }
@@ -47,6 +47,11 @@ export default {
   components: {
     Author,
     PostCard
+  },
+  computed: {
+    filteredPosts() {
+      return this.$page.posts.edges.filter(post => { return post.node.published })
+    }
   },
   metaInfo: {
     title: 'Home'

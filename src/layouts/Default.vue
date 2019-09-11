@@ -3,7 +3,7 @@
 
     <header class="header">
       <div class="header__left">
-        <Logo v-if="showLogo" />
+        <Logo :showBackArrow="showLogo" />
       </div>
 
       <div class="header__right">
